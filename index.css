@@ -159,13 +159,13 @@ h3 {
 
 @media screen and (max-width: 768px) { 
     .cards__grid {
-        height: 295px;
-        width: 295px;
+        height: calc(100vw - 64px);
+        width: calc(100vw - 64px);
     }
     .cards__card {
-        height: 56px;
-        width: 56px;
+        height: calc(25% - 18px);
+        width: calc(25% - 18px);
         padding: 8px;
-        font-size: 10px;
+        font-size: 12px;
     }
 }
