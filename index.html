@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<head>
+    <!-- Add hunt-related favicon -->
+    <title>Бинго! Никита играет в хант.</title>
+    <link rel="icon" type="image/png" href="assets/images/stickyBomb.png">
+    <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+    <div id="spinner" class="spinner__container">
+        <img src="assets/images/stickyBomb.png" />
+    </div>
+
+    <div class="header__container">
+        <h1>Никита играет в хант</h1>
+        <h3>Увлекательное бинго</h3>
+        <!-- Maybe add some hunt related images or icons -->
+    </div>
+
+    <div id="cards" class="cards__container hidden">
+        <div id="cardsGrid" class="cards__grid"></div>
+
+        <div class="controls">
+            <button id="resetButton">Сбросить</button>
+        </div>
+    </div>
+
+    <div id="effects" class="effects__container hidden">
+        <audio id="victorySound" src="assets/audio/victorySound.mp3"></audio>
+        <img src="assets/images/confetti.svg" />
+    </div>
+
+    <script src="index.js"></script>
+</body>
