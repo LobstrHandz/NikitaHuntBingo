@@ -126,9 +126,13 @@ h3 {
     z-index: 4;
     overflow: hidden;
 }
-.effects__container img {
+.effects__confetti {
     position: relative;
+    height: 100%;
+    width: 100%;
     top: 100%;
+    background: url(assets/images/confetti.svg);
+    background-size: cover;
     animation: confettiAnimation 5s ease-out 1167ms;
 }
 
@@ -157,12 +161,7 @@ h3 {
 }
 
 
-@media screen and (max-width: 768px) {
-    .modal__container {
-        align-items: flex-start;
-        padding-top: 250px;
-    }
-
+@media screen and (max-width: 1024px) {
     .cards__grid {
         height: calc(100vw - 64px);
         width: calc(100vw - 64px);
