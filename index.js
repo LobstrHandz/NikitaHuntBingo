@@ -213,6 +213,12 @@
         showNextModalInQueue();
     }
 
+    const clearLocalStorage = () => {
+        localStorage.removeItem('cardsData');
+        localStorage.removeItem('rowsCounter');
+        localStorage.removeItem('columnsCounter');
+    }
+
     const addModalToQueue = (modalData) => {
         modalQueue.push(modalData);
     }
@@ -280,9 +286,7 @@
     }
 
     const handleResetYesClick = () => {
-        localStorage.removeItem('cardsData');
-        localStorage.removeItem('rowsCounter');
-        localStorage.removeItem('columnsCounter');
+        clearLocalStorage();
 
         cardsData = [...CARDS];
         rowsCounter = [ 4, 4, 4, 4 ];
