@@ -280,6 +280,10 @@
     }
 
     const handleResetYesClick = () => {
+        localStorage.removeItem('cardsData');
+        localStorage.removeItem('rowsCounter');
+        localStorage.removeItem('columnsCounter');
+
         cardsData = [...CARDS];
         rowsCounter = [ 4, 4, 4, 4 ];
         columnsCounter = [ 4, 4, 4, 4 ];
